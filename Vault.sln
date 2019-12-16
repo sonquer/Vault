@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Security", "Core\Vaul
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{D8261209-E197-4057-B65E-CA632FD7074C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Core.Tests", "Core\Vault.Core.Tests\Vault.Core.Tests.csproj", "{0492F2FA-F106-4E1D-8241-0B4CB3056A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Security.Tests", "Core\Vault.Security.Tests\Vault.Security.Tests.csproj", "{D7857157-492B-408B-80E9-CEB81BC5D707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +20,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{42667A04-3002-43F1-95A8-09C4CA6A2264} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
 		{EF51071C-2109-4A70-8BFD-4861EA93911C} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{D7857157-492B-408B-80E9-CEB81BC5D707} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{42667A04-3002-43F1-95A8-09C4CA6A2264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +32,13 @@ Global
 		{EF51071C-2109-4A70-8BFD-4861EA93911C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF51071C-2109-4A70-8BFD-4861EA93911C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF51071C-2109-4A70-8BFD-4861EA93911C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7857157-492B-408B-80E9-CEB81BC5D707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7857157-492B-408B-80E9-CEB81BC5D707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7857157-492B-408B-80E9-CEB81BC5D707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7857157-492B-408B-80E9-CEB81BC5D707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
