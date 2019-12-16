@@ -1,27 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{75758B27-5167-4EB1-8048-F7CD5EBAEC09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Core", "Core\Vault.Core\Vault.Core.csproj", "{42667A04-3002-43F1-95A8-09C4CA6A2264}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vault.Core", "Core\Vault.Core\Vault.Core.csproj", "{42667A04-3002-43F1-95A8-09C4CA6A2264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Security", "Core\Vault.Security\Vault.Security.csproj", "{EF51071C-2109-4A70-8BFD-4861EA93911C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vault.Security", "Core\Vault.Security\Vault.Security.csproj", "{EF51071C-2109-4A70-8BFD-4861EA93911C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{D8261209-E197-4057-B65E-CA632FD7074C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Core.Tests", "Core\Vault.Core.Tests\Vault.Core.Tests.csproj", "{0492F2FA-F106-4E1D-8241-0B4CB3056A45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vault.Core.Tests", "Core\Vault.Core.Tests\Vault.Core.Tests.csproj", "{0492F2FA-F106-4E1D-8241-0B4CB3056A45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault.Security.Tests", "Core\Vault.Security.Tests\Vault.Security.Tests.csproj", "{D7857157-492B-408B-80E9-CEB81BC5D707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vault.Security.Tests", "Core\Vault.Security.Tests\Vault.Security.Tests.csproj", "{D7857157-492B-408B-80E9-CEB81BC5D707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vault", "Desktop\Vault\Vault.csproj", "{13A76A6E-8A6D-4533-81CA-A3B063C56D30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{42667A04-3002-43F1-95A8-09C4CA6A2264} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
-		{EF51071C-2109-4A70-8BFD-4861EA93911C} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
-		{0492F2FA-F106-4E1D-8241-0B4CB3056A45} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
-		{D7857157-492B-408B-80E9-CEB81BC5D707} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{42667A04-3002-43F1-95A8-09C4CA6A2264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -40,5 +39,22 @@ Global
 		{D7857157-492B-408B-80E9-CEB81BC5D707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7857157-492B-408B-80E9-CEB81BC5D707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7857157-492B-408B-80E9-CEB81BC5D707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A76A6E-8A6D-4533-81CA-A3B063C56D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A76A6E-8A6D-4533-81CA-A3B063C56D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A76A6E-8A6D-4533-81CA-A3B063C56D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A76A6E-8A6D-4533-81CA-A3B063C56D30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42667A04-3002-43F1-95A8-09C4CA6A2264} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{EF51071C-2109-4A70-8BFD-4861EA93911C} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{0492F2FA-F106-4E1D-8241-0B4CB3056A45} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{D7857157-492B-408B-80E9-CEB81BC5D707} = {75758B27-5167-4EB1-8048-F7CD5EBAEC09}
+		{13A76A6E-8A6D-4533-81CA-A3B063C56D30} = {D8261209-E197-4057-B65E-CA632FD7074C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {059720BA-88FB-4822-9533-A590F7A67DC0}
 	EndGlobalSection
 EndGlobal
