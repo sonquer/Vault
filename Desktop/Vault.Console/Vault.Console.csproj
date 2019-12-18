@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Vault.Core\Vault.Core.csproj" />
+    <ProjectReference Include="..\..\Core\Vault.Security\Vault.Security.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Vault.Infrastructure\Vault.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
