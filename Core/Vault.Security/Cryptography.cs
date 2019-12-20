@@ -4,9 +4,15 @@ using System.Text;
 
 namespace Vault.Security
 {
-    public class Cryptography
+    public sealed class Cryptography
     {
-        public byte[] Encrypt(byte[] bytesToEncrypt, string passsord)
+        /// <summary>
+        /// Encrypt data using AES algorithm
+        /// </summary>
+        /// <param name="bytesToEncrypt">Bytes to be encrypted</param>
+        /// <param name="passsord">Raw password</param>
+        /// <returns>Encrypted bytes</returns>
+        public static byte[] Encrypt(byte[] bytesToEncrypt, string passsord)
         {
             var hash = SHA256.Create();
 
@@ -33,7 +39,13 @@ namespace Vault.Security
             return encryptedBytes;
         }
 
-        public byte[] Decrypt(byte[] bytesToDecrypt, string password)
+        /// <summary>
+        /// Decrypt data using AES algorithm.
+        /// </summary>
+        /// <param name="bytesToDecrypt">Bytes to be decrypted</param>
+        /// <param name="password">Raw password</param>
+        /// <returns>Decrypted bytes</returns>
+        public static byte[] Decrypt(byte[] bytesToDecrypt, string password)
         {
             var hash = SHA256.Create();
 

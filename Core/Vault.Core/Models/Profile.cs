@@ -1,8 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Text;
-using Vault.Core.Dtos;
 using Vault.Security;
+using Vault.Security.Exceptions;
 
 namespace Vault.Core.Models
 {
@@ -10,19 +9,36 @@ namespace Vault.Core.Models
     {
         public Guid Id { get; set; }
 
-        public string EncryptedJsonData { get; set; }
+        public string Name { get; protected set; }
 
-        public Profile(ProfileDto profileDto, string password)
+        public string PasswordHash { get; protected set; }
+
+        public string RecoveryCodeHash { get; protected set; }
+
+        public string EncryptedRecoveryCode { get; protected set; }
+
+        public Profile(string name, string password, string recoveryCode)
         {
-            var profileDtoSerializedObject = JsonConvert.SerializeObject(profileDto);
-            var profileDtoSerializedObjectAsBytes = Encoding.UTF8.GetBytes(profileDtoSerializedObject);
-
-            var cryptograhy = new Cryptography();
-            EncryptedJsonData = Convert.ToBase64String(cryptograhy.Encrypt(profileDtoSerializedObjectAsBytes, password));
+            Name = name;
+            PasswordHash = SecurePasswordHasher.Hash(password);
+            RecoveryCodeHash = SecurePasswordHasher.Hash(recoveryCode);
+            EncryptedRecoveryCode = Convert.ToBase64String(Cryptography.Encrypt(Encoding.UTF8.GetBytes(recoveryCode), recoveryCode));
         }
 
         protected Profile()
         {
+        }
+
+        public bool PasswordIsValid(string password) => SecurePasswordHasher.Verify(password, PasswordHash);
+
+        public string PasswordRecovery(string recoveryCode)
+        {
+            if(!SecurePasswordHasher.Verify(recoveryCode, RecoveryCodeHash))
+            {
+                throw new InvalidPasswordSecurityException();
+            }
+
+            return Encoding.UTF8.GetString(Cryptography.Decrypt(Convert.FromBase64String(EncryptedRecoveryCode), recoveryCode));
         }
     }
 }

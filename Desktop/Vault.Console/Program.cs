@@ -1,26 +1,25 @@
 ﻿using Newtonsoft.Json;
-using Vault.Core.Dtos;
 using Vault.Core.Models;
 using Vault.Infrastructure;
-using Vault.Core.Helpers;
+using Vault.Security;
 
 namespace Vault.Console
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             var profileRepository = new ProfileRepository();
 
-            //profileRepository.Add(new Profile(new ProfileDto { 
-            //    Name = "Test123"
-            //}, "secret"));
+            //var recoveryCode = Recovery.Generate();
+            //profileRepository.Add(new Profile("test_name", "secret", recoveryCode));
 
             var profiles = profileRepository.GetAll();
-            foreach(var profile in profiles)
+            foreach (var profile in profiles)
             {
-                var profileDto = profile.GetProfileDto("secret");
-                System.Console.WriteLine(JsonConvert.SerializeObject(profileDto));
+                System.Console.WriteLine(profile.PasswordIsValid("secret"));
+                System.Console.WriteLine(profile.PasswordRecovery("1234"));
+                System.Console.WriteLine(JsonConvert.SerializeObject(profile));
             }
         }
     }
