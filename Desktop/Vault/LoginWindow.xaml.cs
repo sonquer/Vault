@@ -1,6 +1,8 @@
 ﻿using Ninject;
+using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using Vault.Core.Models;
 using Vault.Security.Random;
 
@@ -65,6 +67,20 @@ namespace Vault
             foreach (var profile in allProfiles)
             {
                 ListView.Items.Add(new { profile.Id, profile.Name });
+            }
+        }
+
+        private void listViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var item = sender as ListViewItem;
+            var id = (Guid)(item.Content as dynamic).Id;
+
+            var profile = _profileRepository.GetById(id);
+
+            var passwordWindow = new ProfilePasswordWindow(profile);
+            if(passwordWindow.ShowDialog() == true)
+            {
+                //TODO
             }
         }
     }
