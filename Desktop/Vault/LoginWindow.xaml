@@ -13,7 +13,7 @@
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
+        FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
     <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
         <Grid>
             <Button Content="New profile" 
@@ -22,31 +22,22 @@
                         Width="163" 
                         Height="Auto" 
                         Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"/>
-            <ListView HorizontalAlignment="Left" Height="282" Margin="41,51,0,0" VerticalAlignment="Top" Width="604">
+            <ListView x:Name="ListView" HorizontalAlignment="Left" Height="282" Margin="41,51,0,0" VerticalAlignment="Top" Width="604">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Width="30"/>
-                        <GridViewColumn Width="300"/>
+                        <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
                     </GridView>
                 </ListView.View>
-                <ListBoxItem>
-                    <DockPanel>
-                        <Image DockPanel.Dock="Left" Source="user.png" Height="32" Width="32" Margin="0,0,20,0" />
-                        <TextBox
-                            DockPanel.Dock="Right"
-                            Text="122"
-                            TextAlignment="Center"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"/>
-                    </DockPanel>
-                </ListBoxItem>
             </ListView>
         </Grid>
 
         <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect SlideInFromTop}">
             <AdornerDecorator>
                 <Grid>
-                    <Button Content="Button" HorizontalAlignment="Left" Margin="100,33,0,349" Width="82" Height="Auto"/>
+                    <TextBox x:Name="ProfileNameTextBox" Height="28" Margin="150,145,150,0" TextWrapping="Wrap" Text="Profile name" VerticalAlignment="Top" FontSize="18"/>
+                    <PasswordBox x:Name="PasswordBox" Height="29" Margin="150,200,150,0" VerticalAlignment="Top" FontSize="18" Password="Password"/>
+                    <Button x:Name="CreateProfileButton" Content="Create profile" Margin="0,250,150,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="121" Click="CreateProfileButton_Click"/>
                 </Grid>
             </AdornerDecorator>
         </materialDesign:TransitionerSlide>

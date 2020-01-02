@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Ninject;
 using System.Windows;
+using Vault.Core.Models;
+using Vault.Infrastructure;
 
 namespace Vault
 {
@@ -13,5 +10,12 @@ namespace Vault
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            IKernel kernel = new StandardKernel();
+            kernel.Bind<IProfileRepository>().To<ProfileRepository>();
+            kernel.Bind<LoginWindow>().To<LoginWindow>();
+            kernel.Get<LoginWindow>().Show();
+        }
     }
 }
