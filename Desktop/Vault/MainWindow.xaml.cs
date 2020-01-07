@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Vault.Core.Models;
 
 namespace Vault
 {
@@ -20,14 +8,18 @@ namespace Vault
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        private readonly IPasswordRepository _passwordRepository;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private Profile _profile;
+
+        public MainWindow(IPasswordRepository passwordRepository, Profile profile)
         {
-            transitioner.SelectedIndex = 1;
+            _passwordRepository = passwordRepository;
+            _profile = profile;
+
+            InitializeComponent();
+
+            TextBox1.Text = $"{profile.Id}|{profile.Name}|{profile.PasswordHash}";
         }
     }
 }

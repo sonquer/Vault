@@ -14,17 +14,8 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}">
-    <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
-        <!-- Creates an adorner layer at the individual slide level so that it hides when the slide is not visible -->
-        <AdornerDecorator>
-            <Grid>
-                <!-- First page with some validation that causes an adorner to show -->
-                <Button Content="Button" HorizontalAlignment="Left" Margin="333,33,0,349" Width="82" Height="Auto" Click="Button_Click"/>
-            </Grid>
-        </AdornerDecorator>
-
-        <Grid>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="318,185,0,0" VerticalAlignment="Top"/>
-        </Grid>
-    </materialDesign:Transitioner>
+    <Grid>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="772"/>
+        <!-- First page with some validation that causes an adorner to show -->
+    </Grid>
 </Window>

@@ -15,10 +15,13 @@ namespace Vault
     {
         private readonly IProfileRepository _profileRepository;
 
+        private readonly IPasswordRepository _passwordRepository;
+
         [Inject]
-        public LoginWindow(IProfileRepository profileRepository)
+        public LoginWindow(IProfileRepository profileRepository, IPasswordRepository passwordRepository)
         {
             _profileRepository = profileRepository;
+            _passwordRepository = passwordRepository;
 
             InitializeComponent();
 
@@ -75,13 +78,7 @@ namespace Vault
             var item = sender as ListViewItem;
             var id = (Guid)(item.Content as dynamic).Id;
 
-            var profile = _profileRepository.GetById(id);
-
-            var passwordWindow = new ProfilePasswordWindow(profile);
-            if(passwordWindow.ShowDialog() == true)
-            {
-                //TODO
-            }
+            CheckPasswordAndOpenProfile(id);
         }
 
         private void RemoveSelectedButton_Click(object sender, RoutedEventArgs e)
@@ -93,6 +90,25 @@ namespace Vault
             {
                 _profileRepository.Remove(profile);
                 RefreshProfiles();
+            }
+        }
+
+        private void OpenSelectedButton_Click(object sender, RoutedEventArgs e)
+        {
+            var id = (Guid)(ListView.SelectedItem as dynamic).Id;
+
+            CheckPasswordAndOpenProfile(id);
+        }
+
+        private void CheckPasswordAndOpenProfile(Guid id)
+        {
+            var profile = _profileRepository.GetById(id);
+
+            var passwordWindow = new ProfilePasswordWindow(profile);
+            if (passwordWindow.ShowDialog() == true)
+            {
+                var mainWindow = new MainWindow(_passwordRepository, profile);
+                mainWindow.ShowDialog();
             }
         }
     }

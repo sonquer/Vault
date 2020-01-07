@@ -16,21 +16,39 @@
         FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
     <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
         <Grid>
-            <Button Content="New profile" Margin="482,366,0,0" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="163"/>
-            <ListView x:Name="ListView" HorizontalAlignment="Left" Height="282" Margin="41,51,0,0" VerticalAlignment="Top" Width="604">
+            <Button Content="New profile" Margin="23,366,0,0" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="163" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
+            <ListView x:Name="ListView" Height="339" Margin="10,0,10,74" VerticalAlignment="Bottom" Width="658">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
-                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="300"/>
                     </GridView>
                 </ListView.View>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
                 <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
+                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
                         <EventSetter Event="MouseDoubleClick" Handler="listViewItem_MouseDoubleClick" />
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True" >
+                                <Setter Property="FontWeight" Value="Bold" />
+                                <Setter Property="Background" Value="Transparent" />
+                                <Setter Property="Foreground" Value="Black" />
+                            </Trigger>
+                        </Style.Triggers>
+                        <Style.Resources>
+                            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+                        </Style.Resources>
                     </Style>
                 </ListView.ItemContainerStyle>
             </ListView>
-            <Button x:Name="RemoveSelectedButton" Content="Remove selected" HorizontalAlignment="Left" Margin="316,366,0,0" VerticalAlignment="Top" Width="139" Height="35" Style="{DynamicResource MaterialDesignFlatButton}" Click="RemoveSelectedButton_Click"/>
+            <Button x:Name="RemoveSelectedButton" Content="Remove selected" HorizontalAlignment="Left" Margin="372,366,0,0" VerticalAlignment="Top" Width="139" Height="35" Style="{DynamicResource MaterialDesignFlatButton}" Click="RemoveSelectedButton_Click"/>
+            <Button x:Name="OpenSelectedButton" Content="Open selected" HorizontalAlignment="Left" Margin="528,366,0,0" VerticalAlignment="Top" Width="128" Height="35" Click="OpenSelectedButton_Click"/>
         </Grid>
 
         <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect SlideInFromTop}">

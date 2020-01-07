@@ -25,7 +25,8 @@ namespace Vault
                 return;
             }
 
-            //TODO
+            DialogResult = true;
+            Close();
         }
     }
 }
