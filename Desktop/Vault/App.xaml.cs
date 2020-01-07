@@ -12,7 +12,10 @@ namespace Vault
     {
         public App()
         {
+            InitializeComponent();
+
             IKernel kernel = new StandardKernel();
+            kernel.Bind<IPasswordRepository>().To<PasswordRepository>();
             kernel.Bind<IProfileRepository>().To<ProfileRepository>();
             kernel.Bind<LoginWindow>().To<LoginWindow>();
             kernel.Get<LoginWindow>().Show();
