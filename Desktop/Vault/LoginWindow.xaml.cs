@@ -83,5 +83,17 @@ namespace Vault
                 //TODO
             }
         }
+
+        private void RemoveSelectedButton_Click(object sender, RoutedEventArgs e)
+        {
+            var id = (Guid)(ListView.SelectedItem as dynamic).Id;
+            var profile = _profileRepository.GetById(id);
+
+            if (MessageBox.Show("Are you want to remove profile?", "Warning!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                _profileRepository.Remove(profile);
+                RefreshProfiles();
+            }
+        }
     }
 }

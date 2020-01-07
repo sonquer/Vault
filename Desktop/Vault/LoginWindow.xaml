@@ -16,12 +16,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
     <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
         <Grid>
-            <Button Content="New profile" 
-                        HorizontalAlignment="Left" 
-                        Margin="482,364,0,22" 
-                        Width="163" 
-                        Height="Auto" 
-                        Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"/>
+            <Button Content="New profile" Margin="482,366,0,0" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="163"/>
             <ListView x:Name="ListView" HorizontalAlignment="Left" Height="282" Margin="41,51,0,0" VerticalAlignment="Top" Width="604">
                 <ListView.View>
                     <GridView>
@@ -33,8 +28,9 @@
                     <Style TargetType="ListViewItem">
                         <EventSetter Event="MouseDoubleClick" Handler="listViewItem_MouseDoubleClick" />
                     </Style>
-               </ListView.ItemContainerStyle>
+                </ListView.ItemContainerStyle>
             </ListView>
+            <Button x:Name="RemoveSelectedButton" Content="Remove selected" HorizontalAlignment="Left" Margin="316,366,0,0" VerticalAlignment="Top" Width="139" Height="35" Style="{DynamicResource MaterialDesignFlatButton}" Click="RemoveSelectedButton_Click"/>
         </Grid>
 
         <materialDesign:TransitionerSlide OpeningEffect="{materialDesign:TransitionEffect SlideInFromTop}">
