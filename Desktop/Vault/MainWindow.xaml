@@ -6,25 +6,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vault"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="Profile" Height="493.033" Width="716.418"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
-    <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
-        <!-- Creates an adorner layer at the individual slide level so that it hides when the slide is not visible -->
-        <AdornerDecorator>
-            <Grid>
-                <!-- First page with some validation that causes an adorner to show -->
-                <Button Content="Button" HorizontalAlignment="Left" Margin="333,33,0,349" Width="82" Height="Auto" Click="Button_Click"/>
-            </Grid>
-        </AdornerDecorator>
-
-        <Grid>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="318,185,0,0" VerticalAlignment="Top"/>
-        </Grid>
-    </materialDesign:Transitioner>
+        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="175"/>
+            <ColumnDefinition Width="697*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="NewPasswordButton" Content="New password" HorizontalAlignment="Left" Margin="10,0,0,10" Width="155" Height="32" VerticalAlignment="Bottom" Click="NewPasswordButton_Click" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
+        <ListView x:Name="ListView" Height="392" Margin="10,10,10,0" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="300"/>
+                </GridView>
+            </ListView.View>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="listViewItem_PreviewMouseLeftButtonDown" />
+                    <EventSetter Event="MouseDoubleClick" Handler="listViewItem_MouseDoubleClick" />
+                    <Setter Property="HorizontalContentAlignment" Value="Left" />
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True" >
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Trigger>
+                    </Style.Triggers>
+                    <Style.Resources>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent"/>
+                    </Style.Resources>
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        <TextBox x:Name="DescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="106,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+        <Label Content="Description: " Grid.Column="1" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.486,0.25"/>
+        <Button x:Name="CopyPasswordToClipboardButton" Content="Copy password to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="293,115,0,0" VerticalAlignment="Top" Width="221" Click="CopyPasswordToClipboardButton_Click"/>
+        <Label Content="Email: " Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="EmailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="106,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+        <Button x:Name="CopyEmailToClipboardButton" Content="Copy email to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="293,78,0,0" VerticalAlignment="Top" Width="221" Click="CopyEmailToClipboardButton_Click"/>
+    </Grid>
 </Window>

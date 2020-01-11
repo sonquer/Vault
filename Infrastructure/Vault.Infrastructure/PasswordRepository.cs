@@ -1,5 +1,6 @@
 ﻿using LiteDB;
 using System;
+using System.Collections.Generic;
 using Vault.Core.Models;
 
 namespace Vault.Infrastructure
@@ -24,6 +25,15 @@ namespace Vault.Infrastructure
             {
                 var passwords = db.GetCollection<Password>(nameof(Password));
                 return passwords.FindOne(e => e.Id == id);
+            }
+        }
+
+        public IEnumerable<Password> GetByProfileId(Guid profileId)
+        {
+            using (var db = new LiteDatabase(@"vault.db"))
+            {
+                var profiles = db.GetCollection<Password>(nameof(Password));
+                return profiles.Find(e => e.ProfileId == profileId);
             }
         }
 
