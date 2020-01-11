@@ -51,8 +51,11 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        <TextBox x:Name="DescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="77" Margin="10,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="504"/>
-        <Label Content="Description" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="73"/>
-        <Button x:Name="CopyPasswordToClipboardButton" Content="Copy password to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="221" Click="Button_Click"/>
+        <TextBox x:Name="DescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="106,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+        <Label Content="Description: " Grid.Column="1" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="0.486,0.25"/>
+        <Button x:Name="CopyPasswordToClipboardButton" Content="Copy password to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="293,115,0,0" VerticalAlignment="Top" Width="221" Click="CopyPasswordToClipboardButton_Click"/>
+        <Label Content="Email: " Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="EmailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="106,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+        <Button x:Name="CopyEmailToClipboardButton" Content="Copy email to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="293,78,0,0" VerticalAlignment="Top" Width="221" Click="CopyEmailToClipboardButton_Click"/>
     </Grid>
 </Window>

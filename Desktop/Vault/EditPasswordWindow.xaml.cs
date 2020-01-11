@@ -17,6 +17,7 @@ namespace Vault
             InitializeComponent();
 
             NameTextBox.Text = _passwordDto.Name;
+            EmailTextBox.Text = _passwordDto.Email;
             PasswordBox.Password = _passwordDto.Password;
             DescriptionTextBox.Text = _passwordDto.Description;
         }
@@ -24,6 +25,7 @@ namespace Vault
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             _passwordDto.Name = NameTextBox.Text;
+            _passwordDto.Email = EmailTextBox.Text;
             _passwordDto.Password = PasswordBox.Password;
             _passwordDto.Description = DescriptionTextBox.Text;
 

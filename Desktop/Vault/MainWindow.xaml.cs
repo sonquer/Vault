@@ -49,6 +49,7 @@ namespace Vault
                 var passwordDto = password.GetPasswordDto(_password);
 
                 DescriptionTextBox.Text = passwordDto.Description;
+                EmailTextBox.Text = passwordDto.Email;
                 _currentPassword = passwordDto.Password;
             }
         }
@@ -91,10 +92,16 @@ namespace Vault
             var passwordDto = password.GetPasswordDto(_password);
 
             DescriptionTextBox.Text = passwordDto.Description;
+            EmailTextBox.Text = passwordDto.Email;
             _currentPassword = passwordDto.Password;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CopyEmailToClipboardButton_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(EmailTextBox.Text);
+        }
+
+        private void CopyPasswordToClipboardButton_Click(object sender, RoutedEventArgs e)
         {
             Clipboard.SetText(_currentPassword);
         }
