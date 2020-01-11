@@ -16,6 +16,7 @@ namespace Vault.Core.Models
 
         public Password(Guid profileId, PasswordDto passwordDto, string password)
         {
+            ProfileId = profileId;
             UpdatePasswordDto(passwordDto, password);
         }
 

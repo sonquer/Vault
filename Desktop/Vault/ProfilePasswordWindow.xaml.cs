@@ -10,12 +10,16 @@ namespace Vault
     {
         private readonly Profile _profile;
 
+        private string passwordString;
+
         public ProfilePasswordWindow(Profile profile)
         {
             InitializeComponent();
 
             _profile = profile;
         }
+
+        public string GetPasswordString() => passwordString;
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
@@ -25,6 +29,7 @@ namespace Vault
                 return;
             }
 
+            passwordString = PasswordBox.Password;
             DialogResult = true;
             Close();
         }

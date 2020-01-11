@@ -107,7 +107,7 @@ namespace Vault
             var passwordWindow = new ProfilePasswordWindow(profile);
             if (passwordWindow.ShowDialog() == true)
             {
-                var mainWindow = new MainWindow(_passwordRepository, profile);
+                var mainWindow = new MainWindow(_passwordRepository, profile, passwordWindow.GetPasswordString());
                 mainWindow.ShowDialog();
             }
         }
