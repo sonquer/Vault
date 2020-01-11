@@ -9,10 +9,12 @@ namespace Vault.Core.Models
     public class Password
     {
         public Guid Id { get; protected set; }
+        
+        public Guid ProfileId { get; protected set; }
 
         public string EncryptedJsonData { get; protected set; }
 
-        public Password(PasswordDto passwordDto, string password)
+        public Password(Guid profileId, PasswordDto passwordDto, string password)
         {
             UpdatePasswordDto(passwordDto, password);
         }
