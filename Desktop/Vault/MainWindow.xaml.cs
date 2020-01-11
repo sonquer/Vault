@@ -17,6 +17,8 @@ namespace Vault
 
         private readonly string _password;
 
+        private string _currentPassword;
+
         public MainWindow(IPasswordRepository passwordRepository, Profile profile, string password)
         {
             _passwordRepository = passwordRepository;
@@ -37,6 +39,17 @@ namespace Vault
             {
                 var passwordDto = password.GetPasswordDto(_password);
                 ListView.Items.Add(new { password.Id, passwordDto.Name });
+            }
+
+            if (ListView.Items.Count > 0)
+            {
+                var id = (Guid)(ListView.Items[0] as dynamic).Id;
+
+                var password = _passwordRepository.GetById(id);
+                var passwordDto = password.GetPasswordDto(_password);
+
+                DescriptionTextBox.Text = passwordDto.Description;
+                _currentPassword = passwordDto.Password;
             }
         }
 
@@ -67,6 +80,23 @@ namespace Vault
 
                 RefreshPasswords();
             }
+        }
+
+        private void listViewItem_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var item = sender as ListViewItem;
+            var id = (Guid)(item.Content as dynamic).Id;
+
+            var password = _passwordRepository.GetById(id);
+            var passwordDto = password.GetPasswordDto(_password);
+
+            DescriptionTextBox.Text = passwordDto.Description;
+            _currentPassword = passwordDto.Password;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(_currentPassword);
         }
     }
 }

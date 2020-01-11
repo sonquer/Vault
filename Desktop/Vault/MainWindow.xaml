@@ -6,20 +6,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vault"
         mc:Ignorable="d"
-        Title="MainWindow" Height="493.033" Width="879.918"
+        Title="Profile" Height="493.033" Width="716.418"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
-        FontFamily="{DynamicResource MaterialDesignFont}">
+        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="175"/>
             <ColumnDefinition Width="697*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="NewPasswordButton" Content="New password" HorizontalAlignment="Left" Margin="10,0,0,10" Width="155" Height="32" VerticalAlignment="Bottom" Click="NewPasswordButton_Click"/>
+        <Button x:Name="NewPasswordButton" Content="New password" HorizontalAlignment="Left" Margin="10,0,0,10" Width="155" Height="32" VerticalAlignment="Bottom" Click="NewPasswordButton_Click" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
         <ListView x:Name="ListView" Height="392" Margin="10,10,10,0" VerticalAlignment="Top">
             <ListView.View>
                 <GridView>
@@ -35,6 +35,7 @@
             </ListBox.ItemTemplate>
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListBoxItem" BasedOn="{StaticResource MaterialDesignListBoxItem}">
+                    <EventSetter Event="PreviewMouseLeftButtonDown" Handler="listViewItem_PreviewMouseLeftButtonDown" />
                     <EventSetter Event="MouseDoubleClick" Handler="listViewItem_MouseDoubleClick" />
                     <Setter Property="HorizontalContentAlignment" Value="Left" />
                     <Style.Triggers>
@@ -50,6 +51,8 @@
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>
-        <!-- First page with some validation that causes an adorner to show -->
+        <TextBox x:Name="DescriptionTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="77" Margin="10,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="504"/>
+        <Label Content="Description" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="73"/>
+        <Button x:Name="CopyPasswordToClipboardButton" Content="Copy password to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="221" Click="Button_Click"/>
     </Grid>
 </Window>
