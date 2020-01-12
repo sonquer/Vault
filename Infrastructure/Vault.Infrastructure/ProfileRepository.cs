@@ -5,8 +5,16 @@ using Vault.Core.Models;
 
 namespace Vault.Infrastructure
 {
+    /// <summary>
+    /// Profile repository
+    /// </summary>
     public class ProfileRepository : IProfileRepository
     {
+        /// <summary>
+        /// Add profile entity to database
+        /// </summary>
+        /// <param name="profile">Profile entity</param>
+        /// <returns>Created profile in database</returns>
         public Profile Add(Profile profile)
         {
             using (var db = new LiteDatabase(@"vault.db"))
@@ -19,6 +27,10 @@ namespace Vault.Infrastructure
             }
         }
 
+        /// <summary>
+        /// Get all profile entities from database
+        /// </summary>
+        /// <returns>Collection of profile entities</returns>
         public IEnumerable<Profile> GetAll()
         {
             using (var db = new LiteDatabase(@"vault.db"))
@@ -28,6 +40,11 @@ namespace Vault.Infrastructure
             }
         }
 
+        /// <summary>
+        /// Get Profile by id from database
+        /// </summary>
+        /// <param name="id">Profile id</param>
+        /// <returns>Profile entity from database</returns>
         public Profile GetById(Guid id)
         {
             using (var db = new LiteDatabase(@"vault.db"))
@@ -37,6 +54,10 @@ namespace Vault.Infrastructure
             }
         }
 
+        /// <summary>
+        /// Remove profile from database
+        /// </summary>
+        /// <param name="profile">Profile entity</param>
         public void Remove(Profile profile)
         {
             using (var db = new LiteDatabase(@"vault.db"))
@@ -46,6 +67,10 @@ namespace Vault.Infrastructure
             }
         }
 
+        /// <summary>
+        /// Update profile in database
+        /// </summary>
+        /// <param name="profile">Profile entity</param>
         public void Update(Profile profile)
         {
             using (var db = new LiteDatabase(@"vault.db"))

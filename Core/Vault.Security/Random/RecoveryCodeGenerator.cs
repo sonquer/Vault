@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Vault.Security.Random
 {
+    /// <summary>
+    /// Recovery code generator
+    /// </summary>
     public class RecoveryCodeGenerator
     {
         protected RecoveryCodeGenerator()
@@ -11,6 +14,9 @@ namespace Vault.Security.Random
 
         private static RecoveryCodeGenerator _instance;
 
+        /// <summary>
+        /// Get instance
+        /// </summary>
         public static RecoveryCodeGenerator Instance
         {
             get
@@ -24,6 +30,11 @@ namespace Vault.Security.Random
             }
         }
 
+        /// <summary>
+        /// Generate password recovery SHA256
+        /// </summary>
+        /// <param name="length">Length of random string used to generate SHA256</param>
+        /// <returns></returns>
         public string Generate(int length = 10)
         {
             var seed = "QWERTYUIOPASDFGHJKLZXCVBNMqazwsxedcrfvtgbyhnujmiklop1234567890!@#$%^&*()_+";
