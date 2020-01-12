@@ -6,14 +6,32 @@ using Vault.Security;
 
 namespace Vault.Core.Models
 {
+    /// <summary>
+    /// Password entity
+    /// </summary>
     public class Password
     {
+        /// <summary>
+        /// Unique password id
+        /// </summary>
         public Guid Id { get; protected set; }
         
+        /// <summary>
+        /// Profile id
+        /// </summary>
         public Guid ProfileId { get; protected set; }
 
+        /// <summary>
+        /// Encrypted Password DTO
+        /// </summary>
         public string EncryptedJsonData { get; protected set; }
 
+        /// <summary>
+        /// Default password constructor
+        /// </summary>
+        /// <param name="profileId">Profile id</param>
+        /// <param name="passwordDto">Password DTO</param>
+        /// <param name="password">Plaintext password used to encrypt password DTO</param>
         public Password(Guid profileId, PasswordDto passwordDto, string password)
         {
             ProfileId = profileId;
@@ -24,6 +42,11 @@ namespace Vault.Core.Models
         {
         }
 
+        /// <summary>
+        /// Decrypt password DTO using plaintext password
+        /// </summary>
+        /// <param name="password">Plaintext password</param>
+        /// <returns></returns>
         public PasswordDto GetPasswordDto(string password)
         {
             var encryptedBytes = Convert.FromBase64String(EncryptedJsonData);
@@ -33,6 +56,11 @@ namespace Vault.Core.Models
             return JsonConvert.DeserializeObject<PasswordDto>(decryptedJsonString);
         }
 
+        /// <summary>
+        /// Update and encrypt password DTO
+        /// </summary>
+        /// <param name="passwordDto">Changed password DTO</param>
+        /// <param name="password">Plaintext password</param>
         public void UpdatePasswordDto(PasswordDto passwordDto, string password)
         {
             var passwordDtoSerializedObject = JsonConvert.SerializeObject(passwordDto);
