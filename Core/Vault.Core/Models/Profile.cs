@@ -43,10 +43,11 @@ namespace Vault.Core.Models
         /// <param name="recoveryCode">Generated recovery code</param>
         public Profile(string name, string password, string recoveryCode)
         {
+            Id = Guid.NewGuid();
             Name = name;
             PasswordHash = SecurePasswordHasher.Hash(password);
             RecoveryCodeHash = SecurePasswordHasher.Hash(recoveryCode);
-            EncryptedRecoveryCode = Convert.ToBase64String(Cryptography.Encrypt(Encoding.UTF8.GetBytes(recoveryCode), recoveryCode));
+            EncryptedRecoveryCode = Convert.ToBase64String(Cryptography.Encrypt(Encoding.UTF8.GetBytes(password), recoveryCode));
         }
 
         protected Profile()
