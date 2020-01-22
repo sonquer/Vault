@@ -8,7 +8,7 @@ namespace Vault.Security.Tests
     public class SecurePasswordHasherTests
     {
         [TestCase]
-        public void Password_is_valid_test()
+        public void Verify_HashedPassword_IsVerifiedTrue()
         {
             var hashPassword = SecurePasswordHasher.Hash("test_password");
 
@@ -16,7 +16,7 @@ namespace Vault.Security.Tests
         }
 
         [TestCase]
-        public void Password_is_invalid_test()
+        public void Verify_HashedPassword_IsVerifiedFalse()
         {
             var hashPassword = SecurePasswordHasher.Hash("test_password");
 
@@ -24,7 +24,7 @@ namespace Vault.Security.Tests
         }
 
         [TestCase]
-        public void Invalid_verify_password_test()
+        public void Verify_PlainTextPassword_NotSupportedExceptionIsThrown()
         {
             var fakeHash = "qwertyuiop";
 

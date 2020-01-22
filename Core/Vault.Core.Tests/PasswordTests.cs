@@ -8,7 +8,7 @@ namespace Vault.Core.Tests
     public class PasswordTests
     {
         [TestCase]
-        public void Create_password_id_is_unique_test()
+        public void Constructor_CreatedPasswordEntity_GuidIsNotEmpty()
         {
             var passwordDto = new PasswordDto
             {
@@ -24,7 +24,7 @@ namespace Vault.Core.Tests
         }
 
         [TestCase]
-        public void Create_password_dto_test()
+        public void Constructor_CreatedPasswordEntity_DataWasEncrypted()
         {
             var passwordDto = new PasswordDto
             {
@@ -40,7 +40,7 @@ namespace Vault.Core.Tests
         }
 
         [TestCase]
-        public void Get_password_dto_test()
+        public void GetPasswordDto_FromCreatedPasswordEntity_PasswordDtoFieldsAreEqual()
         {
             var passwordDto = new PasswordDto
             {

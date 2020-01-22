@@ -7,7 +7,7 @@ namespace Vault.Core.Tests
     public class ProfileTests
     {
         [TestCase]
-        public void Create_profile_name_test()
+        public void Constructor_CreatedPasswordEntity_ProfileNameIsEqual()
         {
             var profile = new Profile("test_name", "test_password", "test_recovery_code");
 
@@ -15,7 +15,7 @@ namespace Vault.Core.Tests
         }
 
         [TestCase]
-        public void Create_profile_password_is_valid_test()
+        public void PasswordIsValid_CreatedPasswordEntity_PasswordIsValidTrue()
         {
             var profile = new Profile("test_name", "test_password", "test_recovery_code");
 
@@ -23,7 +23,7 @@ namespace Vault.Core.Tests
         }
 
         [TestCase]
-        public void Create_profile_password_is_invalid_test()
+        public void PasswordIsValid_CreatedPasswordEntity_PasswordIsValidFalse()
         {
             var profile = new Profile("test_name", "test_password", "test_recovery_code");
 
@@ -31,7 +31,7 @@ namespace Vault.Core.Tests
         }
 
         [TestCase]
-        public void Password_recovery_test()
+        public void PasswordRecovery_CreatePasswordEntity_PasswordRecoveryIsEqual()
         {
             var profile = new Profile("test_name", "test_password", "test_recovery_code");
 
@@ -40,7 +40,7 @@ namespace Vault.Core.Tests
 
 
         [TestCase]
-        public void Invalid_recovery_code_test()
+        public void PasswordRecovery_CreatedPasswordEntity_InvalidPasswordSecurityExceptionWasThrown()
         {
             var profile = new Profile("test_name", "test_password", "test_recovery_code");
 

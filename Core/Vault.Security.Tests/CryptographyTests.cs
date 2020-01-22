@@ -9,7 +9,7 @@ namespace Vault.Security.Tests
     public class CryptographyTests
     {
         [TestCase]
-        public void Encrypt_and_decrypt_test()
+        public void EncryptAndDecrypt_SamePasswordString_DecrypredDataIsEqual()
         {
             var secret = "secret text";
 
@@ -21,7 +21,7 @@ namespace Vault.Security.Tests
         }
 
         [TestCase]
-        public void Wrong_password_test()
+        public void Decrypt_DifferentPasswords_CryptographicExceptionWasThrown()
         {
             var secret = "secret text";
 
