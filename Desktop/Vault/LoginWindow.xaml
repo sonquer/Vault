@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Vault"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Profiles" Height="452.459" Width="684.426" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="Vault profiles" Height="452.459" Width="684.426" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -16,7 +16,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}" Loaded="Window_Loaded">
     <materialDesign:Transitioner SelectedIndex="0" x:Name="transitioner">
         <Grid>
-            <Button Content="New profile" Margin="23,366,0,0" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="163" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
+            <Button Content="New profile" Margin="23,366,0,0" Command="{x:Static materialDesign:Transitioner.MoveNextCommand}" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Width="110" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
             <ListView x:Name="ListView" Height="339" Margin="10,0,10,74" VerticalAlignment="Bottom" Width="658">
                 <ListView.View>
                     <GridView>
