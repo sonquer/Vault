@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="PasswordRepository.Add Method " Url="html/303c4773-ed19-3c1a-731d-139467e4ebf9.htm" />
+    <HelpKINode Title="ProfileRepository.Add Method " Url="html/7ea39ce5-9783-d869-3763-7cb0bcb19e60.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetAll method" Url="html/784d2d4f-1736-f3e6-3e9b-cb611050ae88.htm" />
+  <HelpKINode Title="GetById method">
+    <HelpKINode Title="PasswordRepository.GetById Method " Url="html/eeb308df-948b-38d5-9aeb-c59190006cf8.htm" />
+    <HelpKINode Title="ProfileRepository.GetById Method " Url="html/1604af52-874b-cc19-d4ed-497f88281b53.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetByProfileId method" Url="html/122743b8-ba3a-a7e9-93f8-075f4e8d4a3e.htm" />
+  <HelpKINode Title="PasswordRepository class">
+    <HelpKINode Title="PasswordRepository Class" Url="html/3fb6d0bf-7d79-c82e-c836-ad3fe9bbb52d.htm" />
+    <HelpKINode Title="constructor" Url="html/571dcb14-283f-8c5a-ff1a-c07b11cbbabd.htm" />
+    <HelpKINode Title="methods" Url="html/a5b6873a-e35e-7470-f84c-7805c5658915.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PasswordRepository.Add method" Url="html/303c4773-ed19-3c1a-731d-139467e4ebf9.htm" />
+  <HelpKINode Title="PasswordRepository.GetById method" Url="html/eeb308df-948b-38d5-9aeb-c59190006cf8.htm" />
+  <HelpKINode Title="PasswordRepository.GetByProfileId method" Url="html/122743b8-ba3a-a7e9-93f8-075f4e8d4a3e.htm" />
+  <HelpKINode Title="PasswordRepository.PasswordRepository constructor" Url="html/571dcb14-283f-8c5a-ff1a-c07b11cbbabd.htm" />
+  <HelpKINode Title="PasswordRepository.Remove method" Url="html/e4c76367-5432-7b4f-42a6-5ffa2917328d.htm" />
+  <HelpKINode Title="PasswordRepository.Update method" Url="html/0c719ea5-d140-71b2-0785-41d7e5956a11.htm" />
+  <HelpKINode Title="ProfileRepository class">
+    <HelpKINode Title="ProfileRepository Class" Url="html/7257edfb-0400-f321-5c77-867058e13ad6.htm" />
+    <HelpKINode Title="constructor" Url="html/d2de3df8-0c2b-3ba6-f24c-49ef874f745a.htm" />
+    <HelpKINode Title="methods" Url="html/04988b39-382b-bc98-ef97-7aa15ddab770.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ProfileRepository.Add method" Url="html/7ea39ce5-9783-d869-3763-7cb0bcb19e60.htm" />
+  <HelpKINode Title="ProfileRepository.GetAll method" Url="html/784d2d4f-1736-f3e6-3e9b-cb611050ae88.htm" />
+  <HelpKINode Title="ProfileRepository.GetById method" Url="html/1604af52-874b-cc19-d4ed-497f88281b53.htm" />
+  <HelpKINode Title="ProfileRepository.ProfileRepository constructor" Url="html/d2de3df8-0c2b-3ba6-f24c-49ef874f745a.htm" />
+  <HelpKINode Title="ProfileRepository.Remove method" Url="html/3e9457db-258d-cd55-38f7-ed895884ddb3.htm" />
+  <HelpKINode Title="ProfileRepository.Update method" Url="html/82ccb511-b032-3f57-e2ae-9680e2d14bae.htm" />
+  <HelpKINode Title="Remove method">
+    <HelpKINode Title="PasswordRepository.Remove Method " Url="html/e4c76367-5432-7b4f-42a6-5ffa2917328d.htm" />
+    <HelpKINode Title="ProfileRepository.Remove Method " Url="html/3e9457db-258d-cd55-38f7-ed895884ddb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Update method">
+    <HelpKINode Title="PasswordRepository.Update Method " Url="html/0c719ea5-d140-71b2-0785-41d7e5956a11.htm" />
+    <HelpKINode Title="ProfileRepository.Update Method " Url="html/82ccb511-b032-3f57-e2ae-9680e2d14bae.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Vault.Infrastructure namespace" Url="html/da1212eb-d2ce-9fbe-bf1f-e727c5de5a87.htm" />
+  <HelpKINode Title="Vault.Infrastructure.PasswordRepository class" Url="html/3fb6d0bf-7d79-c82e-c836-ad3fe9bbb52d.htm" />
+  <HelpKINode Title="Vault.Infrastructure.ProfileRepository class" Url="html/7257edfb-0400-f321-5c77-867058e13ad6.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/54e7ad9e-4ce5-4fa8-9140-960e15913125.htm" />
+    <HelpKINode Title="history" Url="html/096c56ca-bb1d-40f2-a456-f06222d54d11.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/db659364-68d6-4676-bd62-58c80cbec54c.htm" />
+</HelpKI>

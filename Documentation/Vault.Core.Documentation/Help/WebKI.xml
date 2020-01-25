@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="IPasswordRepository.Add Method " Url="html/e70b5ce5-7c53-debc-9af8-49ea37a1612c.htm" />
+    <HelpKINode Title="IProfileRepository.Add Method " Url="html/f8c28982-5e3d-28ae-e992-84841df27fb4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Description property" Url="html/20859147-40c4-7c67-95a8-8599815d971e.htm" />
+  <HelpKINode Title="Email property" Url="html/80b62fdf-1316-93ec-f722-42d704176df3.htm" />
+  <HelpKINode Title="EncryptedJsonData property" Url="html/17ab9499-3768-00db-4dbd-6394316d82b2.htm" />
+  <HelpKINode Title="EncryptedRecoveryCode property" Url="html/a318a23e-598f-674f-9363-f6aca13b9fb9.htm" />
+  <HelpKINode Title="GetAll method" Url="html/e06733bc-2aca-80f2-cbd6-c816f74496c1.htm" />
+  <HelpKINode Title="GetById method">
+    <HelpKINode Title="IPasswordRepository.GetById Method " Url="html/ea77d82f-b6e8-2d0a-50fd-99584f277b6c.htm" />
+    <HelpKINode Title="IProfileRepository.GetById Method " Url="html/93d6c7e3-8a76-9e26-937f-d10f0ef7e31a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetByProfileId method" Url="html/641a9ddb-ccf2-32d6-8ffd-69a0e3217750.htm" />
+  <HelpKINode Title="GetPasswordDto method" Url="html/bfd97281-7b37-0e8f-b1ae-5b197e49ebf1.htm" />
+  <HelpKINode Title="Id property">
+    <HelpKINode Title="Password.Id Property " Url="html/9885b5c6-27f8-90b9-8e51-f71dd0e1439e.htm" />
+    <HelpKINode Title="Profile.Id Property " Url="html/bb76401d-13fb-a611-93f5-e860d62848ca.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPasswordRepository interface">
+    <HelpKINode Title="IPasswordRepository Interface" Url="html/b8d03b22-8ef9-3526-d3b7-200fc5ba5b16.htm" />
+    <HelpKINode Title="methods" Url="html/beac515f-d6ea-c9c3-5ebe-f25b1510a5db.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPasswordRepository.Add method" Url="html/e70b5ce5-7c53-debc-9af8-49ea37a1612c.htm" />
+  <HelpKINode Title="IPasswordRepository.GetById method" Url="html/ea77d82f-b6e8-2d0a-50fd-99584f277b6c.htm" />
+  <HelpKINode Title="IPasswordRepository.GetByProfileId method" Url="html/641a9ddb-ccf2-32d6-8ffd-69a0e3217750.htm" />
+  <HelpKINode Title="IPasswordRepository.Remove method" Url="html/c74ceb61-737c-afd2-bc10-2ca9a4ffedb8.htm" />
+  <HelpKINode Title="IPasswordRepository.Update method" Url="html/1942609f-b6c2-2d1c-62e8-572cdc8b8b83.htm" />
+  <HelpKINode Title="IProfileRepository interface">
+    <HelpKINode Title="IProfileRepository Interface" Url="html/39b382f2-5626-1dba-764d-b431e68522a8.htm" />
+    <HelpKINode Title="methods" Url="html/6451ca88-a9d9-72d0-ba17-c89f6acbe201.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IProfileRepository.Add method" Url="html/f8c28982-5e3d-28ae-e992-84841df27fb4.htm" />
+  <HelpKINode Title="IProfileRepository.GetAll method" Url="html/e06733bc-2aca-80f2-cbd6-c816f74496c1.htm" />
+  <HelpKINode Title="IProfileRepository.GetById method" Url="html/93d6c7e3-8a76-9e26-937f-d10f0ef7e31a.htm" />
+  <HelpKINode Title="IProfileRepository.Remove method" Url="html/8214537c-35cd-fa05-5457-45dc3728a454.htm" />
+  <HelpKINode Title="IProfileRepository.Update method" Url="html/34e76952-bfb3-4530-2c96-492dbafe343e.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="PasswordDto.Name Property " Url="html/5ad1e089-991c-3d87-4753-370cc4c8bf21.htm" />
+    <HelpKINode Title="Profile.Name Property " Url="html/7c0fb900-f188-5544-0b28-2894b6d06719.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password class">
+    <HelpKINode Title="Password Class" Url="html/01802e7d-7031-b010-0c8c-68834c9c1375.htm" />
+    <HelpKINode Title="constructor" Url="html/83c38019-2283-66aa-dea2-42218c7f2afd.htm" />
+    <HelpKINode Title="methods" Url="html/3c9bf500-d2a1-2d8a-84f9-e87aa51e580b.htm" />
+    <HelpKINode Title="properties" Url="html/af7cbaa3-4101-a423-0c5e-8fbcac47fb90.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password property" Url="html/d2910624-d57c-c079-a70a-ee394b2f5b56.htm" />
+  <HelpKINode Title="Password.EncryptedJsonData property" Url="html/17ab9499-3768-00db-4dbd-6394316d82b2.htm" />
+  <HelpKINode Title="Password.GetPasswordDto method" Url="html/bfd97281-7b37-0e8f-b1ae-5b197e49ebf1.htm" />
+  <HelpKINode Title="Password.Id property" Url="html/9885b5c6-27f8-90b9-8e51-f71dd0e1439e.htm" />
+  <HelpKINode Title="Password.Password constructor" Url="html/83c38019-2283-66aa-dea2-42218c7f2afd.htm" />
+  <HelpKINode Title="Password.ProfileId property" Url="html/b27373ac-6a06-9ccc-a1ce-4d6628663662.htm" />
+  <HelpKINode Title="Password.UpdatePasswordDto method" Url="html/3de28b85-98a2-9ef5-978d-d6288212440e.htm" />
+  <HelpKINode Title="PasswordDto class">
+    <HelpKINode Title="PasswordDto Class" Url="html/2a34edb7-11c4-2235-7f6e-ccade3bcc6be.htm" />
+    <HelpKINode Title="constructor" Url="html/cc33d48a-3fd8-518c-02c0-81296aa8b6fd.htm" />
+    <HelpKINode Title="methods" Url="html/cda6b2db-faa0-4beb-9d00-809d82db0ead.htm" />
+    <HelpKINode Title="properties" Url="html/34a1fd6f-0b5f-74a5-35ed-dac9340eefec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PasswordDto.Description property" Url="html/20859147-40c4-7c67-95a8-8599815d971e.htm" />
+  <HelpKINode Title="PasswordDto.Email property" Url="html/80b62fdf-1316-93ec-f722-42d704176df3.htm" />
+  <HelpKINode Title="PasswordDto.Name property" Url="html/5ad1e089-991c-3d87-4753-370cc4c8bf21.htm" />
+  <HelpKINode Title="PasswordDto.Password property" Url="html/d2910624-d57c-c079-a70a-ee394b2f5b56.htm" />
+  <HelpKINode Title="PasswordDto.PasswordDto constructor" Url="html/cc33d48a-3fd8-518c-02c0-81296aa8b6fd.htm" />
+  <HelpKINode Title="PasswordHash property" Url="html/a5267717-4884-f431-f811-e1a46409156e.htm" />
+  <HelpKINode Title="PasswordIsValid method" Url="html/b8efe27b-375c-f306-7d13-ba8b23c694dd.htm" />
+  <HelpKINode Title="PasswordRecovery method" Url="html/bc0176c5-ed3f-2291-c5c7-ed3856ce552e.htm" />
+  <HelpKINode Title="Profile class">
+    <HelpKINode Title="Profile Class" Url="html/fddeea84-f63b-90d5-017b-76e15c30d93b.htm" />
+    <HelpKINode Title="constructor" Url="html/4bc1195d-f6d6-8456-bd40-9cd7bf57fbfc.htm" />
+    <HelpKINode Title="methods" Url="html/2880352d-7bc4-f5fe-d578-f5b0091c3014.htm" />
+    <HelpKINode Title="properties" Url="html/c4cb3cf7-f691-76ce-d60d-48cefc862b5e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Profile.EncryptedRecoveryCode property" Url="html/a318a23e-598f-674f-9363-f6aca13b9fb9.htm" />
+  <HelpKINode Title="Profile.Id property" Url="html/bb76401d-13fb-a611-93f5-e860d62848ca.htm" />
+  <HelpKINode Title="Profile.Name property" Url="html/7c0fb900-f188-5544-0b28-2894b6d06719.htm" />
+  <HelpKINode Title="Profile.PasswordHash property" Url="html/a5267717-4884-f431-f811-e1a46409156e.htm" />
+  <HelpKINode Title="Profile.PasswordIsValid method" Url="html/b8efe27b-375c-f306-7d13-ba8b23c694dd.htm" />
+  <HelpKINode Title="Profile.PasswordRecovery method" Url="html/bc0176c5-ed3f-2291-c5c7-ed3856ce552e.htm" />
+  <HelpKINode Title="Profile.Profile constructor" Url="html/4bc1195d-f6d6-8456-bd40-9cd7bf57fbfc.htm" />
+  <HelpKINode Title="Profile.RecoveryCodeHash property" Url="html/07bbd0fd-7158-62e5-f3f5-9f59ce4f6774.htm" />
+  <HelpKINode Title="ProfileId property" Url="html/b27373ac-6a06-9ccc-a1ce-4d6628663662.htm" />
+  <HelpKINode Title="RecoveryCodeHash property" Url="html/07bbd0fd-7158-62e5-f3f5-9f59ce4f6774.htm" />
+  <HelpKINode Title="Remove method">
+    <HelpKINode Title="IPasswordRepository.Remove Method " Url="html/c74ceb61-737c-afd2-bc10-2ca9a4ffedb8.htm" />
+    <HelpKINode Title="IProfileRepository.Remove Method " Url="html/8214537c-35cd-fa05-5457-45dc3728a454.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Update method">
+    <HelpKINode Title="IPasswordRepository.Update Method " Url="html/1942609f-b6c2-2d1c-62e8-572cdc8b8b83.htm" />
+    <HelpKINode Title="IProfileRepository.Update Method " Url="html/34e76952-bfb3-4530-2c96-492dbafe343e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdatePasswordDto method" Url="html/3de28b85-98a2-9ef5-978d-d6288212440e.htm" />
+  <HelpKINode Title="Vault.Core.Dtos namespace" Url="html/f3d990b1-383c-283f-0dd0-e1c17fe8c48b.htm" />
+  <HelpKINode Title="Vault.Core.Dtos.PasswordDto class" Url="html/2a34edb7-11c4-2235-7f6e-ccade3bcc6be.htm" />
+  <HelpKINode Title="Vault.Core.Models namespace" Url="html/0f0431c0-208e-dd77-08fa-c41e33d989d0.htm" />
+  <HelpKINode Title="Vault.Core.Models.IPasswordRepository interface" Url="html/b8d03b22-8ef9-3526-d3b7-200fc5ba5b16.htm" />
+  <HelpKINode Title="Vault.Core.Models.IProfileRepository interface" Url="html/39b382f2-5626-1dba-764d-b431e68522a8.htm" />
+  <HelpKINode Title="Vault.Core.Models.Password class" Url="html/01802e7d-7031-b010-0c8c-68834c9c1375.htm" />
+  <HelpKINode Title="Vault.Core.Models.Profile class" Url="html/fddeea84-f63b-90d5-017b-76e15c30d93b.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/a9f6fb44-2b90-4627-aa67-8e420d4fa9b4.htm" />
+    <HelpKINode Title="history" Url="html/fbd4bc21-9b41-4951-82b0-821b51b215ee.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/88612d56-31af-45e8-b692-737c650780fc.htm" />
+</HelpKI>

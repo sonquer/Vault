@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/377417d1-6522-4162-aea1-90f8b0a76fb9.htm" />
+  <HelpTOCNode Id="e90d3417-ac52-4507-944a-030041706612" Title="Version History" Url="html/b5e39efd-38e9-43b1-955b-add5c7af198a.htm">
+    <HelpTOCNode Title="Version 1.0.0.0" Url="html/ab8900c9-70d8-4558-adfe-3c42da0282ae.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="700bca28-0cee-41f2-929c-6a2096e1b052" Title="Vault.Security" Url="html/f321e4d7-13c7-6c48-849d-61d15bdbf246.htm">
+    <HelpTOCNode Id="03ab77f5-61ae-4f1c-b26e-7a2d21f73616" Title="Cryptography Class" Url="html/28211781-d001-a7df-d80a-4b4254ac3a3d.htm">
+      <HelpTOCNode Title="Cryptography Constructor " Url="html/4c63d3cb-0a88-98fd-3e5d-d2183ae4f9af.htm" />
+      <HelpTOCNode Id="d6cb788d-954b-42dc-a11e-2555cc736374" Title="Cryptography Methods" Url="html/799e3db2-3305-3634-6d2e-4d9efef598d7.htm">
+        <HelpTOCNode Title="Decrypt Method " Url="html/f75e8d65-dd76-a8c5-36d1-51cb7fc561d7.htm" />
+        <HelpTOCNode Title="Encrypt Method " Url="html/1e78af27-0b84-2dfd-d1e4-a15302589e4a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="570ab9f7-5e79-4b76-8028-8e3558ceb29d" Title="SecurePasswordHasher Class" Url="html/5c3f4cea-8c14-dd01-8577-776a1b98a026.htm">
+      <HelpTOCNode Title="SecurePasswordHasher Constructor " Url="html/92ae77bc-8fa2-0f96-831d-e052929fe65a.htm" />
+      <HelpTOCNode Id="c01245a4-ac11-4d3d-9851-91e974aa5553" Title="SecurePasswordHasher Methods" Url="html/31d48c50-d905-cddb-22b5-ab39ac8a98aa.htm">
+        <HelpTOCNode Id="023fe051-a27c-471b-b00b-7d51ff484468" Title="Hash Method " Url="html/8c839bf5-72db-c98a-0089-62cac84e622e.htm">
+          <HelpTOCNode Title="Hash Method (String)" Url="html/3aad7bba-d19d-4b04-471e-47f549f61272.htm" />
+          <HelpTOCNode Title="Hash Method (String, Int32)" Url="html/bbb349a7-786b-ad5f-4e9c-c571abbb06a8.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IsHashSupported Method " Url="html/b6ae59c5-4fe4-cc2a-f54b-6fb7c55049a6.htm" />
+        <HelpTOCNode Title="Verify Method " Url="html/f04a5a15-73d0-274c-7af3-4ae2a6e8f035.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="116f92b9-311b-4372-8b5e-640b892a6959" Title="Vault.Security.Exceptions" Url="html/8520eb24-8a2f-d355-b981-50f299b9b6ef.htm">
+    <HelpTOCNode Id="f08ae2d4-bb93-4d82-b43c-b155c32f6407" Title="InvalidPasswordSecurityException Class" Url="html/296b042c-e458-5505-f654-ccf31e136d2d.htm">
+      <HelpTOCNode Title="InvalidPasswordSecurityException Constructor " Url="html/a71dbcd3-6fc0-1479-028e-3abcc4699790.htm" />
+      <HelpTOCNode Title="InvalidPasswordSecurityException Properties" Url="html/171b2d5d-b31f-b042-3262-66727e1f313c.htm" />
+      <HelpTOCNode Title="InvalidPasswordSecurityException Methods" Url="html/283ad753-159f-d0a8-afa4-db87f5a36c55.htm" />
+      <HelpTOCNode Title="InvalidPasswordSecurityException Events" Url="html/36aca21f-3c83-796d-78a9-613b6a7542da.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="d894b48b-9231-430a-b617-0c886fee235d" Title="Vault.Security.Random" Url="html/62aae771-10d1-90ce-2c53-ac060611921b.htm">
+    <HelpTOCNode Id="9a505135-b54a-4604-ab5f-327cb11ddc40" Title="RecoveryCodeGenerator Class" Url="html/99de1488-b489-6613-fa15-345d2d40e57c.htm">
+      <HelpTOCNode Title="RecoveryCodeGenerator Constructor " Url="html/e5ff5a67-5d28-d887-65e4-d299a93ae881.htm" />
+      <HelpTOCNode Id="ed53882f-e788-473c-9b47-c20f8f4a2c0e" Title="RecoveryCodeGenerator Properties" Url="html/8f0b3060-f0e8-f03d-31f8-494002b24a0f.htm">
+        <HelpTOCNode Title="Instance Property " Url="html/50e57d65-1e9b-8c46-4613-e4e63fcd8d65.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="38e629de-16ed-43f7-87fe-3d202176b370" Title="RecoveryCodeGenerator Methods" Url="html/a7de07d3-e6b1-91c2-f0d4-31b2e945939f.htm">
+        <HelpTOCNode Title="Generate Method " Url="html/ed390f70-5231-d731-dc3f-a258333e1245.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
