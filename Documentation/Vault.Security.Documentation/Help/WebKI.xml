@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Cryptography class">
+    <HelpKINode Title="Cryptography Class" Url="html/28211781-d001-a7df-d80a-4b4254ac3a3d.htm" />
+    <HelpKINode Title="constructor" Url="html/4c63d3cb-0a88-98fd-3e5d-d2183ae4f9af.htm" />
+    <HelpKINode Title="methods" Url="html/799e3db2-3305-3634-6d2e-4d9efef598d7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Cryptography.Cryptography constructor" Url="html/4c63d3cb-0a88-98fd-3e5d-d2183ae4f9af.htm" />
+  <HelpKINode Title="Cryptography.Decrypt method" Url="html/f75e8d65-dd76-a8c5-36d1-51cb7fc561d7.htm" />
+  <HelpKINode Title="Cryptography.Encrypt method" Url="html/1e78af27-0b84-2dfd-d1e4-a15302589e4a.htm" />
+  <HelpKINode Title="Decrypt method" Url="html/f75e8d65-dd76-a8c5-36d1-51cb7fc561d7.htm" />
+  <HelpKINode Title="Encrypt method" Url="html/1e78af27-0b84-2dfd-d1e4-a15302589e4a.htm" />
+  <HelpKINode Title="Generate method" Url="html/ed390f70-5231-d731-dc3f-a258333e1245.htm" />
+  <HelpKINode Title="Hash method" Url="html/8c839bf5-72db-c98a-0089-62cac84e622e.htm" />
+  <HelpKINode Title="Instance property" Url="html/50e57d65-1e9b-8c46-4613-e4e63fcd8d65.htm" />
+  <HelpKINode Title="InvalidPasswordSecurityException class">
+    <HelpKINode Title="InvalidPasswordSecurityException Class" Url="html/296b042c-e458-5505-f654-ccf31e136d2d.htm" />
+    <HelpKINode Title="constructor" Url="html/a71dbcd3-6fc0-1479-028e-3abcc4699790.htm" />
+    <HelpKINode Title="events" Url="html/36aca21f-3c83-796d-78a9-613b6a7542da.htm" />
+    <HelpKINode Title="methods" Url="html/283ad753-159f-d0a8-afa4-db87f5a36c55.htm" />
+    <HelpKINode Title="properties" Url="html/171b2d5d-b31f-b042-3262-66727e1f313c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InvalidPasswordSecurityException.InvalidPasswordSecurityException constructor" Url="html/a71dbcd3-6fc0-1479-028e-3abcc4699790.htm" />
+  <HelpKINode Title="IsHashSupported method" Url="html/b6ae59c5-4fe4-cc2a-f54b-6fb7c55049a6.htm" />
+  <HelpKINode Title="RecoveryCodeGenerator class">
+    <HelpKINode Title="RecoveryCodeGenerator Class" Url="html/99de1488-b489-6613-fa15-345d2d40e57c.htm" />
+    <HelpKINode Title="constructor" Url="html/e5ff5a67-5d28-d887-65e4-d299a93ae881.htm" />
+    <HelpKINode Title="methods" Url="html/a7de07d3-e6b1-91c2-f0d4-31b2e945939f.htm" />
+    <HelpKINode Title="properties" Url="html/8f0b3060-f0e8-f03d-31f8-494002b24a0f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RecoveryCodeGenerator.Generate method" Url="html/ed390f70-5231-d731-dc3f-a258333e1245.htm" />
+  <HelpKINode Title="RecoveryCodeGenerator.Instance property" Url="html/50e57d65-1e9b-8c46-4613-e4e63fcd8d65.htm" />
+  <HelpKINode Title="RecoveryCodeGenerator.RecoveryCodeGenerator constructor" Url="html/e5ff5a67-5d28-d887-65e4-d299a93ae881.htm" />
+  <HelpKINode Title="SecurePasswordHasher class">
+    <HelpKINode Title="SecurePasswordHasher Class" Url="html/5c3f4cea-8c14-dd01-8577-776a1b98a026.htm" />
+    <HelpKINode Title="constructor" Url="html/92ae77bc-8fa2-0f96-831d-e052929fe65a.htm" />
+    <HelpKINode Title="methods" Url="html/31d48c50-d905-cddb-22b5-ab39ac8a98aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SecurePasswordHasher.Hash method" Url="html/8c839bf5-72db-c98a-0089-62cac84e622e.htm" />
+  <HelpKINode Title="SecurePasswordHasher.IsHashSupported method" Url="html/b6ae59c5-4fe4-cc2a-f54b-6fb7c55049a6.htm" />
+  <HelpKINode Title="SecurePasswordHasher.SecurePasswordHasher constructor" Url="html/92ae77bc-8fa2-0f96-831d-e052929fe65a.htm" />
+  <HelpKINode Title="SecurePasswordHasher.Verify method" Url="html/f04a5a15-73d0-274c-7af3-4ae2a6e8f035.htm" />
+  <HelpKINode Title="Vault.Security namespace" Url="html/f321e4d7-13c7-6c48-849d-61d15bdbf246.htm" />
+  <HelpKINode Title="Vault.Security.Cryptography class" Url="html/28211781-d001-a7df-d80a-4b4254ac3a3d.htm" />
+  <HelpKINode Title="Vault.Security.Exceptions namespace" Url="html/8520eb24-8a2f-d355-b981-50f299b9b6ef.htm" />
+  <HelpKINode Title="Vault.Security.Exceptions.InvalidPasswordSecurityException class" Url="html/296b042c-e458-5505-f654-ccf31e136d2d.htm" />
+  <HelpKINode Title="Vault.Security.Random namespace" Url="html/62aae771-10d1-90ce-2c53-ac060611921b.htm" />
+  <HelpKINode Title="Vault.Security.Random.RecoveryCodeGenerator class" Url="html/99de1488-b489-6613-fa15-345d2d40e57c.htm" />
+  <HelpKINode Title="Vault.Security.SecurePasswordHasher class" Url="html/5c3f4cea-8c14-dd01-8577-776a1b98a026.htm" />
+  <HelpKINode Title="Verify method" Url="html/f04a5a15-73d0-274c-7af3-4ae2a6e8f035.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/ab8900c9-70d8-4558-adfe-3c42da0282ae.htm" />
+    <HelpKINode Title="history" Url="html/b5e39efd-38e9-43b1-955b-add5c7af198a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/377417d1-6522-4162-aea1-90f8b0a76fb9.htm" />
+</HelpKI>

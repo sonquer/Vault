@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/88612d56-31af-45e8-b692-737c650780fc.htm" />
+  <HelpTOCNode Id="9b02cd24-3998-41d4-90d8-74e5e328065f" Title="Version History" Url="html/fbd4bc21-9b41-4951-82b0-821b51b215ee.htm">
+    <HelpTOCNode Title="Version 1.0.0.0" Url="html/a9f6fb44-2b90-4627-aa67-8e420d4fa9b4.htm" />
+  </HelpTOCNode>
+  <HelpTOCNode Id="bb404b0f-5dda-4f7a-befe-151da0a75d7d" Title="Vault.Core.Dtos" Url="html/f3d990b1-383c-283f-0dd0-e1c17fe8c48b.htm">
+    <HelpTOCNode Id="b5cffdd4-4d94-4a26-9a84-72e355f327ee" Title="PasswordDto Class" Url="html/2a34edb7-11c4-2235-7f6e-ccade3bcc6be.htm">
+      <HelpTOCNode Title="PasswordDto Constructor " Url="html/cc33d48a-3fd8-518c-02c0-81296aa8b6fd.htm" />
+      <HelpTOCNode Id="0f9176b6-ee6f-46c7-88bd-8a0d80d1ef34" Title="PasswordDto Properties" Url="html/34a1fd6f-0b5f-74a5-35ed-dac9340eefec.htm">
+        <HelpTOCNode Title="Description Property " Url="html/20859147-40c4-7c67-95a8-8599815d971e.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/80b62fdf-1316-93ec-f722-42d704176df3.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/5ad1e089-991c-3d87-4753-370cc4c8bf21.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/d2910624-d57c-c079-a70a-ee394b2f5b56.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PasswordDto Methods" Url="html/cda6b2db-faa0-4beb-9d00-809d82db0ead.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e34c4892-dede-4e8b-8e89-4c08f0dc9846" Title="Vault.Core.Models" Url="html/0f0431c0-208e-dd77-08fa-c41e33d989d0.htm">
+    <HelpTOCNode Id="3ac4ca75-e744-4226-92f2-e2708708550d" Title="IPasswordRepository Interface" Url="html/b8d03b22-8ef9-3526-d3b7-200fc5ba5b16.htm">
+      <HelpTOCNode Id="b3305e7e-debe-4e69-898b-c2cd96e45182" Title="IPasswordRepository Methods" Url="html/beac515f-d6ea-c9c3-5ebe-f25b1510a5db.htm">
+        <HelpTOCNode Title="Add Method " Url="html/e70b5ce5-7c53-debc-9af8-49ea37a1612c.htm" />
+        <HelpTOCNode Title="GetById Method " Url="html/ea77d82f-b6e8-2d0a-50fd-99584f277b6c.htm" />
+        <HelpTOCNode Title="GetByProfileId Method " Url="html/641a9ddb-ccf2-32d6-8ffd-69a0e3217750.htm" />
+        <HelpTOCNode Title="Remove Method " Url="html/c74ceb61-737c-afd2-bc10-2ca9a4ffedb8.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/1942609f-b6c2-2d1c-62e8-572cdc8b8b83.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="47677dde-be21-4b64-b5e0-09f521850d96" Title="IProfileRepository Interface" Url="html/39b382f2-5626-1dba-764d-b431e68522a8.htm">
+      <HelpTOCNode Id="96e4950d-a75a-4473-939c-60eef19d7c9c" Title="IProfileRepository Methods" Url="html/6451ca88-a9d9-72d0-ba17-c89f6acbe201.htm">
+        <HelpTOCNode Title="Add Method " Url="html/f8c28982-5e3d-28ae-e992-84841df27fb4.htm" />
+        <HelpTOCNode Title="GetAll Method " Url="html/e06733bc-2aca-80f2-cbd6-c816f74496c1.htm" />
+        <HelpTOCNode Title="GetById Method " Url="html/93d6c7e3-8a76-9e26-937f-d10f0ef7e31a.htm" />
+        <HelpTOCNode Title="Remove Method " Url="html/8214537c-35cd-fa05-5457-45dc3728a454.htm" />
+        <HelpTOCNode Title="Update Method " Url="html/34e76952-bfb3-4530-2c96-492dbafe343e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f492729-f355-47f5-abac-1d96d4975f01" Title="Password Class" Url="html/01802e7d-7031-b010-0c8c-68834c9c1375.htm">
+      <HelpTOCNode Id="3972fb47-4dd8-4941-8e72-0255ab34074b" Title="Password Constructor " Url="html/83c38019-2283-66aa-dea2-42218c7f2afd.htm">
+        <HelpTOCNode Title="Password Constructor " Url="html/a37e5713-8ae1-c364-b340-bbc6e613f09c.htm" />
+        <HelpTOCNode Title="Password Constructor (Guid, PasswordDto, String)" Url="html/d3cf6269-1e12-755d-f576-9d2c4f68b77d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c3f0face-c000-4a5a-959f-3eb923cfdb21" Title="Password Properties" Url="html/af7cbaa3-4101-a423-0c5e-8fbcac47fb90.htm">
+        <HelpTOCNode Title="EncryptedJsonData Property " Url="html/17ab9499-3768-00db-4dbd-6394316d82b2.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/9885b5c6-27f8-90b9-8e51-f71dd0e1439e.htm" />
+        <HelpTOCNode Title="ProfileId Property " Url="html/b27373ac-6a06-9ccc-a1ce-4d6628663662.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0613383-f991-4297-9722-cdd228cc0744" Title="Password Methods" Url="html/3c9bf500-d2a1-2d8a-84f9-e87aa51e580b.htm">
+        <HelpTOCNode Title="GetPasswordDto Method " Url="html/bfd97281-7b37-0e8f-b1ae-5b197e49ebf1.htm" />
+        <HelpTOCNode Title="UpdatePasswordDto Method " Url="html/3de28b85-98a2-9ef5-978d-d6288212440e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="013431a7-2932-4016-a0a4-28cea655ca6b" Title="Profile Class" Url="html/fddeea84-f63b-90d5-017b-76e15c30d93b.htm">
+      <HelpTOCNode Id="629c22de-177f-4e98-9da2-9806ee22c7fc" Title="Profile Constructor " Url="html/4bc1195d-f6d6-8456-bd40-9cd7bf57fbfc.htm">
+        <HelpTOCNode Title="Profile Constructor " Url="html/ec5820b7-ba0b-b57c-b716-4077c544d127.htm" />
+        <HelpTOCNode Title="Profile Constructor (String, String, String)" Url="html/5d5d23a0-75bb-3fff-4237-a1726e1475eb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fb6ba1a9-691f-40c5-b1f2-3df9c9d783c8" Title="Profile Properties" Url="html/c4cb3cf7-f691-76ce-d60d-48cefc862b5e.htm">
+        <HelpTOCNode Title="EncryptedRecoveryCode Property " Url="html/a318a23e-598f-674f-9363-f6aca13b9fb9.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/bb76401d-13fb-a611-93f5-e860d62848ca.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/7c0fb900-f188-5544-0b28-2894b6d06719.htm" />
+        <HelpTOCNode Title="PasswordHash Property " Url="html/a5267717-4884-f431-f811-e1a46409156e.htm" />
+        <HelpTOCNode Title="RecoveryCodeHash Property " Url="html/07bbd0fd-7158-62e5-f3f5-9f59ce4f6774.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3099f149-79c5-497f-ac1d-814f09d130a3" Title="Profile Methods" Url="html/2880352d-7bc4-f5fe-d578-f5b0091c3014.htm">
+        <HelpTOCNode Title="PasswordIsValid Method " Url="html/b8efe27b-375c-f306-7d13-ba8b23c694dd.htm" />
+        <HelpTOCNode Title="PasswordRecovery Method " Url="html/bc0176c5-ed3f-2291-c5c7-ed3856ce552e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
