@@ -19,6 +19,8 @@ namespace Vault
 
         private string _currentPassword;
 
+        private Password _currentPasswordEntity;
+
         public MainWindow(IPasswordRepository passwordRepository, Profile profile, string password)
         {
             _passwordRepository = passwordRepository;
@@ -91,6 +93,8 @@ namespace Vault
             var password = _passwordRepository.GetById(id);
             var passwordDto = password.GetPasswordDto(_password);
 
+            _currentPasswordEntity = password;
+
             DescriptionTextBox.Text = passwordDto.Description;
             EmailTextBox.Text = passwordDto.Email;
             _currentPassword = passwordDto.Password;
@@ -104,6 +108,22 @@ namespace Vault
         private void CopyPasswordToClipboardButton_Click(object sender, RoutedEventArgs e)
         {
             Clipboard.SetText(_currentPassword);
+        }
+
+        private void RemovePasswordButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(_currentPasswordEntity is null)
+            {
+                MessageBox.Show("Please select password before.");
+                return;
+            }
+
+            if(MessageBox.Show("Are you want remove passowrd?", "Warning", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                _passwordRepository.Remove(_currentPasswordEntity);
+
+                RefreshPasswords();
+            }
         }
     }
 }
