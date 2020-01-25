@@ -20,7 +20,7 @@
             <ColumnDefinition Width="697*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="NewPasswordButton" Content="New password" HorizontalAlignment="Left" Margin="10,0,0,10" Width="155" Height="32" VerticalAlignment="Bottom" Click="NewPasswordButton_Click" Style="{DynamicResource MaterialDesignRaisedAccentButton}"/>
-        <ListView x:Name="ListView" Height="392" Margin="10,10,10,0" VerticalAlignment="Top">
+        <ListView x:Name="ListView" Height="361" Margin="10,10,10,0" VerticalAlignment="Top">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="300"/>
@@ -57,5 +57,6 @@
         <Label Content="Email: " Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="91"/>
         <TextBox x:Name="EmailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="106,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
         <Button x:Name="CopyEmailToClipboardButton" Content="Copy email to clipboard" Grid.Column="1" HorizontalAlignment="Left" Margin="293,78,0,0" VerticalAlignment="Top" Width="221" Click="CopyEmailToClipboardButton_Click"/>
+        <Button x:Name="RemovePasswordButton" Content="Remove password" HorizontalAlignment="Left" Margin="10,0,0,47" Width="155" Height="32" VerticalAlignment="Bottom" Style="{DynamicResource MaterialDesignFlatButton}" Click="RemovePasswordButton_Click"/>
     </Grid>
 </Window>

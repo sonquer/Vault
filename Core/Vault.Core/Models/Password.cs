@@ -34,6 +34,7 @@ namespace Vault.Core.Models
         /// <param name="password">Plaintext password used to encrypt password DTO</param>
         public Password(Guid profileId, PasswordDto passwordDto, string password)
         {
+            Id = Guid.NewGuid();
             ProfileId = profileId;
             UpdatePasswordDto(passwordDto, password);
         }
